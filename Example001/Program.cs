@@ -4,6 +4,8 @@
 // 0,5 7 -2 -0,2
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
+
+// выводит на экран двухмерный массив
 void PrintArray(double [,] matrix)
 {
     for (int i=0; i < matrix.GetLength(0); i++ )
@@ -16,6 +18,7 @@ void PrintArray(double [,] matrix)
     }   
 };
 Random rnd = new Random();
+// наполнение массива данными
 void FillArray ( double [,] matrix)
 {
     for (int i=0; i<matrix.GetLength(0); i++)
