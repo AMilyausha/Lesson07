@@ -25,13 +25,11 @@ void FillArray ( double [,] matrix)
     {
         for (int j=0; j < matrix.GetLength(1); j++)
             {
-             matrix[i,j]=rnd.Next(-100,100);
+             matrix[i,j]=Convert.ToDouble(rnd.Next(-99, 100)) / 10;
             }
     }
 }
 double[,] matrix = new double [3,4];
-PrintArray(matrix);
-Console.WriteLine();
 FillArray(matrix);
 PrintArray(matrix);
 
